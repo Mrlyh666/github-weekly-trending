@@ -1,0 +1,12 @@
+{
+  "name": "github-weekly-trending",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/run-tests.mjs",
+    "fetch": "node scripts/fetch.mjs"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0"
+  }
+}
