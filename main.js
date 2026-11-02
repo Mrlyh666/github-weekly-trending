@@ -164,9 +164,21 @@ function card(p) {
 function renderList() {
   const list = document.getElementById('list');
   const empty = document.getElementById('empty');
+  // Batch into one fragment so the browser reflows once per render.
+  const frag =
+    typeof document.createDocumentFragment === 'function'
+      ? document.createDocumentFragment()
+      : null;
+  const target = frag || list;
   list.innerHTML = '';
 
-  if (!state.weekData || state.weekData.projects.length === 0) {
+  if (!state.weekData) {
+    empty.textContent = state.currentWeek ? '加载中…' : '本周暂无数据';
+    empty.hidden = false;
+    return;
+  }
+  if (state.weekData.projects.length === 0) {
+    empty.textContent = '本周暂无数据';
     empty.hidden = false;
     return;
   }
@@ -183,11 +195,8 @@ function renderList() {
     const el = document.createElement('p');
     el.className = 'no-match';
     el.textContent = '没有符合筛选条件的项目';
-    list.appendChild(el);
-    return;
-  }
-
-  if (state.domains.length === 0) {
+    target.appendChild(el);
+  } else if (state.domains.length === 0) {
     const groups = new Map();
     for (const p of projects) {
       if (!groups.has(p.domain)) groups.set(p.domain, []);
@@ -197,12 +206,14 @@ function renderList() {
       (a, b) => (a === 'other') - (b === 'other'),
     );
     for (const domain of order) {
-      list.appendChild(sectionHeader(DOMAIN_LABELS[domain] || domain));
-      for (const p of groups.get(domain)) list.appendChild(card(p));
+      target.appendChild(sectionHeader(DOMAIN_LABELS[domain] || domain));
+      for (const p of groups.get(domain)) target.appendChild(card(p));
     }
   } else {
-    for (const p of projects) list.appendChild(card(p));
+    for (const p of projects) target.appendChild(card(p));
   }
+
+  if (frag) list.appendChild(frag);
 }
 
 function renderSources() {
@@ -222,7 +233,14 @@ function renderSources() {
   el.textContent = notes.length ? ` · ${notes.join('；')}` : '';
 }
 
-async function init() {
+function renderAll() {
+  renderWeekSelector();
+  renderFilters();
+  renderList();
+  renderSources();
+}
+
+function init() {
   for (const b of document.querySelectorAll('#sort-toggle .chip')) {
     b.addEventListener('click', () => {
       state.sort = b.dataset.sort === 'stars' ? 'stars' : 'gained';
@@ -231,34 +249,41 @@ async function init() {
       renderList();
     });
   }
+
+  // Debounce typing so each keystroke does not rebuild the whole list.
+  let timer = null;
   document.getElementById('query').addEventListener('input', (e) => {
-    state.query = e.target.value.trim();
-    writeStateToUrl();
-    renderList();
+    const value = e.target.value.trim();
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      state.query = value;
+      writeStateToUrl();
+      renderList();
+    }, 150);
   });
+
   document.getElementById('week-select').addEventListener('change', (e) => {
     state.currentWeek = e.target.value;
     writeStateToUrl();
     load();
   });
 
-  await load();
+  if (state.weekData) renderAll();
+  else load();
 }
 
 async function load() {
   state.weekData = null;
-  renderWeekSelector();
-  renderFilters();
-  renderList();
-  renderSources();
+  renderAll();
 
-  const res = await fetch(`./data/weeks/${state.currentWeek}.json`);
-  state.weekData = res.ok ? await res.json() : null;
+  try {
+    const res = await fetch(`./data/weeks/${state.currentWeek}.json`);
+    state.weekData = res.ok ? await res.json() : null;
+  } catch {
+    state.weekData = null;
+  }
 
-  renderWeekSelector();
-  renderFilters();
-  renderList();
-  renderSources();
+  renderAll();
 }
 
 const query = parseQuery(location.search);
@@ -267,11 +292,39 @@ state.domains = query.domains;
 state.sort = query.sort;
 state.query = query.query;
 
-fetch('./data/weeks/index.json')
-  .then((r) => r.json())
-  .then((index) => {
-    state.weeks = index.weeks ?? [];
-    state.currentWeek = resolveWeek(query.week, state.weeks, index.latest);
+function readBootData() {
+  const el = document.getElementById('boot-data');
+  if (!el) return null;
+  const raw = (el.textContent || '').trim();
+  if (!raw) return null;
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+function bootFromFetch() {
+  fetch('./data/weeks/index.json')
+    .then((r) => r.json())
+    .then((index) => {
+      state.weeks = index.weeks ?? [];
+      state.currentWeek = resolveWeek(query.week, state.weeks, index.latest);
+      init();
+    })
+    .catch(() => init());
+}
+
+const boot = readBootData();
+if (boot?.index && boot.week) {
+  state.weeks = boot.index.weeks ?? [];
+  state.currentWeek = resolveWeek(query.week, state.weeks, boot.index.latest);
+  if (state.currentWeek === boot.week.week) {
+    state.weekData = boot.week;
     init();
-  })
-  .catch(() => init());
+  } else {
+    bootFromFetch();
+  }
+} else {
+  bootFromFetch();
+}
