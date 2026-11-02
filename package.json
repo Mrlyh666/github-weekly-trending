@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "test": "node scripts/run-tests.mjs",
-    "fetch": "node scripts/fetch.mjs"
+    "fetch": "node scripts/fetch.mjs",
+    "build": "node scripts/build-site.mjs"
   },
   "dependencies": {
     "cheerio": "1.0.0"
