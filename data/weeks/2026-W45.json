@@ -1,0 +1,2018 @@
+{
+  "week": "2026-W45",
+  "generatedAt": "2026-11-02T05:12:47.336Z",
+  "sources": {
+    "trending": "ok",
+    "api": "ok"
+  },
+  "projects": [
+    {
+      "rank": 1,
+      "repo": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 310751,
+      "forks": 27653,
+      "topics": [
+        "ai",
+        "brainstorming",
+        "coding",
+        "obra",
+        "sdlc",
+        "skills",
+        "subagent-driven-development",
+        "superpowers"
+      ],
+      "boards": [
+        "overall"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 2,
+      "repo": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 294930,
+      "forks": 43653,
+      "topics": [
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "developer-tools",
+        "llm",
+        "mcp",
+        "productivity"
+      ],
+      "boards": [
+        "overall",
+        "javascript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 3,
+      "repo": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": null,
+      "stars": 228116,
+      "forks": 22750,
+      "topics": [],
+      "boards": [
+        "overall"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 4,
+      "repo": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 186441,
+      "forks": 22026,
+      "topics": [
+        "agent-skills"
+      ],
+      "boards": [
+        "overall",
+        "python"
+      ],
+      "domain": "other",
+      "starsGained": null
+    },
+    {
+      "rank": 5,
+      "repo": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "language": "Go",
+      "stars": 185619,
+      "forks": 18857,
+      "topics": [
+        "deepseek",
+        "gemma",
+        "glm",
+        "go",
+        "golang",
+        "gpt-oss",
+        "llama",
+        "llm",
+        "llms",
+        "minimax",
+        "mistral",
+        "muse",
+        "ollama",
+        "qwen"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 6,
+      "repo": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "description": "💫 Toolkit to help you get started with SDD or any other process!",
+      "language": "Python",
+      "stars": 145079,
+      "forks": 13002,
+      "topics": [
+        "ai",
+        "copilot",
+        "development",
+        "engineering",
+        "prd",
+        "spec",
+        "spec-driven"
+      ],
+      "boards": [
+        "python"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 7,
+      "repo": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "language": "Python",
+      "stars": 140660,
+      "forks": 13444,
+      "topics": [
+        "ai-agents",
+        "antigravity",
+        "ast",
+        "claude-code",
+        "code-analysis",
+        "code-search",
+        "codex",
+        "cursor",
+        "developer-tools",
+        "gemini",
+        "graphify",
+        "graphrag",
+        "knowledge-graph",
+        "leiden",
+        "llm",
+        "mcp",
+        "openclaw",
+        "rag",
+        "skills",
+        "tree-sitter"
+      ],
+      "boards": [
+        "python"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 8,
+      "repo": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "language": "Rust",
+      "stars": 132776,
+      "forks": 20980,
+      "topics": [],
+      "boards": [
+        "rust"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 9,
+      "repo": "rustdesk/rustdesk",
+      "url": "https://github.com/rustdesk/rustdesk",
+      "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
+      "language": "Rust",
+      "stars": 127829,
+      "forks": 20237,
+      "topics": [
+        "android",
+        "anydesk",
+        "dart",
+        "flatpak",
+        "flutter",
+        "flutter-apps",
+        "ios",
+        "linux",
+        "macos",
+        "p2p",
+        "rdp",
+        "remote-control",
+        "remote-desktop",
+        "rust",
+        "rust-lang",
+        "teamviewer",
+        "vnc",
+        "wayland",
+        "windows"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "mobile",
+      "starsGained": null
+    },
+    {
+      "rank": 10,
+      "repo": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 119633,
+      "forks": 22881,
+      "topics": [
+        "agent",
+        "finance",
+        "llm",
+        "multiagent",
+        "trading"
+      ],
+      "boards": [
+        "overall",
+        "python"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 11,
+      "repo": "fatedier/frp",
+      "url": "https://github.com/fatedier/frp",
+      "description": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.",
+      "language": "Go",
+      "stars": 110378,
+      "forks": 15299,
+      "topics": [
+        "expose",
+        "firewall",
+        "frp",
+        "go",
+        "http-proxy",
+        "nat",
+        "p2p",
+        "proxy",
+        "reverse-proxy",
+        "tunnel"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "backend",
+      "starsGained": null
+    },
+    {
+      "rank": 12,
+      "repo": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars": 109650,
+      "forks": 9583,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-memory",
+        "anthropic",
+        "artificial-intelligence",
+        "chromadb",
+        "claude",
+        "claude-agent-sdk",
+        "claude-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "embeddings",
+        "long-term-memory",
+        "mem0",
+        "memory-engine",
+        "openmemory",
+        "rag",
+        "sqlite",
+        "supermemory"
+      ],
+      "boards": [
+        "overall",
+        "typescript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 13,
+      "repo": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "language": "TypeScript",
+      "stars": 108661,
+      "forks": 14910,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "cli",
+        "gemini",
+        "gemini-api",
+        "mcp-client",
+        "mcp-server"
+      ],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 14,
+      "repo": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+      "language": "JavaScript",
+      "stars": 107994,
+      "forks": 7287,
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "anti-slop",
+        "claude-code",
+        "codex",
+        "cursor",
+        "design-system",
+        "frontend",
+        "landing-page",
+        "ui-design",
+        "web-design"
+      ],
+      "boards": [
+        "overall",
+        "javascript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 15,
+      "repo": "ruvnet/RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "language": "Rust",
+      "stars": 102034,
+      "forks": 13254,
+      "topics": [
+        "awesome",
+        "claude",
+        "densepose",
+        "esp32",
+        "firmware",
+        "home-assistant",
+        "home-automation",
+        "iot",
+        "monitoring",
+        "networking",
+        "npm",
+        "pose-estimation",
+        "react",
+        "rf",
+        "self-learning",
+        "skills",
+        "spatial-intelligence",
+        "typescript",
+        "wifi",
+        "wifi-security"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "security",
+      "starsGained": null
+    },
+    {
+      "rank": 16,
+      "repo": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "language": "Rust",
+      "stars": 99585,
+      "forks": 5893,
+      "topics": [
+        "agent-skills",
+        "ai",
+        "anti-slop",
+        "design",
+        "slop"
+      ],
+      "boards": [
+        "overall",
+        "rust"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 17,
+      "repo": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "language": "Go",
+      "stars": 93320,
+      "forks": 11203,
+      "topics": [
+        "agent-harness",
+        "agentic-ai",
+        "agentic-nagive",
+        "agentic-retrieval",
+        "agentic-search",
+        "ai",
+        "ai-agents",
+        "context-engine",
+        "context-engineering",
+        "context-management",
+        "harness-engineering",
+        "knowledge-compilation",
+        "rag",
+        "retrieval-augmented-generation",
+        "search-harness"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 18,
+      "repo": "gohugoio/hugo",
+      "url": "https://github.com/gohugoio/hugo",
+      "description": "The world’s fastest framework for building websites.",
+      "language": "Go",
+      "stars": 90317,
+      "forks": 8441,
+      "topics": [
+        "blog-engine",
+        "cms",
+        "content-management-system",
+        "documentation-tool",
+        "go",
+        "hugo",
+        "static-site-generator"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "backend",
+      "starsGained": null
+    },
+    {
+      "rank": 19,
+      "repo": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars": 77228,
+      "forks": 7079,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "animation",
+        "claude-code",
+        "ffmpeg",
+        "framework",
+        "gsap",
+        "html",
+        "html-to-video",
+        "mcp",
+        "motion-graphics",
+        "puppeteer",
+        "rendering",
+        "typescript",
+        "video-editor"
+      ],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 20,
+      "repo": "juliangarnier/anime",
+      "url": "https://github.com/juliangarnier/anime",
+      "description": "JavaScript animation engine",
+      "language": "JavaScript",
+      "stars": 74192,
+      "forks": 5041,
+      "topics": [
+        "animation",
+        "anime",
+        "canvas",
+        "css",
+        "javascript",
+        "javascript-library",
+        "svg"
+      ],
+      "boards": [
+        "javascript"
+      ],
+      "domain": "frontend",
+      "starsGained": null
+    },
+    {
+      "rank": 21,
+      "repo": "remotion-dev/remotion",
+      "url": "https://github.com/remotion-dev/remotion",
+      "description": "🎥      Make videos programmatically with React",
+      "language": "TypeScript",
+      "stars": 69818,
+      "forks": 5741,
+      "topics": [
+        "javascript",
+        "react",
+        "video"
+      ],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "frontend",
+      "starsGained": null
+    },
+    {
+      "rank": 22,
+      "repo": "blader/humanizer",
+      "url": "https://github.com/blader/humanizer",
+      "description": "Agent skill that removes signs of AI-generated writing from text",
+      "language": "Python",
+      "stars": 63578,
+      "forks": 5031,
+      "topics": [
+        "agent-skills",
+        "ai-humanizer",
+        "ai-writing",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "cursor",
+        "humanize-ai-text",
+        "humanizer",
+        "llm",
+        "prompt-engineering",
+        "writing-tools"
+      ],
+      "boards": [
+        "python"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 23,
+      "repo": "ghostty-org/ghostty",
+      "url": "https://github.com/ghostty-org/ghostty",
+      "description": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
+      "language": "Zig",
+      "stars": 63216,
+      "forks": 3818,
+      "topics": [],
+      "boards": [
+        "overall"
+      ],
+      "domain": "frontend",
+      "starsGained": null
+    },
+    {
+      "rank": 24,
+      "repo": "coreyhaines31/marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "language": "JavaScript",
+      "stars": 57894,
+      "forks": 8517,
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "ai-seo",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "codex",
+        "content-marketing",
+        "conversion-rate-optimization",
+        "copywriting",
+        "cursor",
+        "email-marketing",
+        "generative-engine-optimization",
+        "growth-marketing",
+        "marketing",
+        "marketing-automation",
+        "saas-marketing",
+        "seo",
+        "skill-md"
+      ],
+      "boards": [
+        "javascript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 25,
+      "repo": "router-for-me/CLIProxyAPI",
+      "url": "https://github.com/router-for-me/CLIProxyAPI",
+      "description": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build, Muse Code, Devin as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini Series, GPT Series, Grok Series, Claude model through API",
+      "language": "Go",
+      "stars": 57232,
+      "forks": 8760,
+      "topics": [
+        "antigravity",
+        "claude-code",
+        "cluade",
+        "codex",
+        "devin",
+        "gemini",
+        "muse",
+        "openai"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 26,
+      "repo": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 56561,
+      "forks": 3686,
+      "topics": [],
+      "boards": [
+        "overall",
+        "javascript"
+      ],
+      "domain": "security",
+      "starsGained": null
+    },
+    {
+      "rank": 27,
+      "repo": "multica-ai/multica",
+      "url": "https://github.com/multica-ai/multica",
+      "description": "Make humans and AI agents work as one team — open-source and self-hostable.",
+      "language": "Go",
+      "stars": 54568,
+      "forks": 7178,
+      "topics": [],
+      "boards": [
+        "go"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 28,
+      "repo": "HKUDS/DeepTutor",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "language": "Python",
+      "stars": 53847,
+      "forks": 6587,
+      "topics": [
+        "ai-agents",
+        "ai-tutor",
+        "clawbot",
+        "cli-tool",
+        "deepresearch",
+        "interactive-learning",
+        "learning",
+        "multi-agent-systems",
+        "rag"
+      ],
+      "boards": [
+        "python"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 29,
+      "repo": "MHSanaei/3x-ui",
+      "url": "https://github.com/MHSanaei/3x-ui",
+      "description": "Supporting multi-protocol multi-user(Vmess, Vless, Trojan, ShadowSocks, Wireguard, Hysteria, Tunnel, Mixed, HTTP, Tun, MTProto، AmneziaWG) ",
+      "language": "Go",
+      "stars": 49119,
+      "forks": 12617,
+      "topics": [
+        "ech",
+        "fail2ban",
+        "http",
+        "hysteria2",
+        "mixed",
+        "mtproto",
+        "nodes",
+        "post-quantum",
+        "reality",
+        "shadowsocks",
+        "shadowsocks2022",
+        "tls",
+        "trojan",
+        "tun",
+        "tunnel",
+        "vless",
+        "vmess",
+        "wireguard",
+        "x25519",
+        "xhttp"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "backend",
+      "starsGained": null
+    },
+    {
+      "rank": 30,
+      "repo": "herdrdev/herdr",
+      "url": "https://github.com/herdrdev/herdr",
+      "description": "the runtime your coding agents live on",
+      "language": "Rust",
+      "stars": 47393,
+      "forks": 3789,
+      "topics": [
+        "agent",
+        "agent-orchestration",
+        "ai",
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "devtools",
+        "multiplexer",
+        "rust",
+        "terminal",
+        "terminal-multiplexer",
+        "terminal-ui",
+        "tmux",
+        "tui",
+        "workspace-manager"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 31,
+      "repo": "tashfeenahmed/freellmapi",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+      "language": "TypeScript",
+      "stars": 45871,
+      "forks": 6267,
+      "topics": [],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 32,
+      "repo": "AstrBotDevs/AstrBot",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
+      "language": "Python",
+      "stars": 45546,
+      "forks": 3339,
+      "topics": [
+        "agent",
+        "ai",
+        "astrbot",
+        "chatbot",
+        "chatgpt",
+        "discord",
+        "docker",
+        "gemini",
+        "gpt",
+        "llama",
+        "llm",
+        "mcp",
+        "openai",
+        "python",
+        "qq",
+        "qqbot",
+        "telegram"
+      ],
+      "boards": [
+        "python"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 33,
+      "repo": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 45121,
+      "forks": 2396,
+      "topics": [],
+      "boards": [
+        "overall"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 34,
+      "repo": "lfnovo/open-notebook",
+      "url": "https://github.com/lfnovo/open-notebook",
+      "description": "An Open Source implementation of Notebook LM with more flexibility and features",
+      "language": "TypeScript",
+      "stars": 41318,
+      "forks": 4755,
+      "topics": [
+        "assistant",
+        "learning",
+        "note-taking",
+        "notebook",
+        "notes-app",
+        "self-learning"
+      ],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "data",
+      "starsGained": null
+    },
+    {
+      "rank": 35,
+      "repo": "gitroomhq/postiz-app",
+      "url": "https://github.com/gitroomhq/postiz-app",
+      "description": "📨 The ultimate agentic social media scheduling tool 🤖",
+      "language": "TypeScript",
+      "stars": 40618,
+      "forks": 7733,
+      "topics": [
+        "nextjs",
+        "open-source",
+        "open-source-social-media-scheduling-tool",
+        "oss",
+        "postiz-cloud",
+        "postiz-hosted",
+        "redis",
+        "scheduling-tool",
+        "social-media-scheduling-tool",
+        "typescript"
+      ],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "db",
+      "starsGained": null
+    },
+    {
+      "rank": 36,
+      "repo": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 38568,
+      "forks": 8946,
+      "topics": [],
+      "boards": [
+        "overall",
+        "typescript"
+      ],
+      "domain": "other",
+      "starsGained": null
+    },
+    {
+      "rank": 37,
+      "repo": "docker/compose",
+      "url": "https://github.com/docker/compose",
+      "description": "Define and run multi-container applications with Docker",
+      "language": "Go",
+      "stars": 38568,
+      "forks": 5900,
+      "topics": [
+        "docker",
+        "docker-compose",
+        "go",
+        "golang",
+        "orchestration"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "devops",
+      "starsGained": null
+    },
+    {
+      "rank": 38,
+      "repo": "tailscale/tailscale",
+      "url": "https://github.com/tailscale/tailscale",
+      "description": "The easiest, most secure way to use WireGuard and 2FA.",
+      "language": "Go",
+      "stars": 38497,
+      "forks": 3409,
+      "topics": [
+        "2fa",
+        "oauth",
+        "sso",
+        "tailscale",
+        "vpn",
+        "wireguard"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "security",
+      "starsGained": null
+    },
+    {
+      "rank": 39,
+      "repo": "hmjz100/LinkSwift",
+      "url": "https://github.com/hmjz100/LinkSwift",
+      "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
+      "language": "JavaScript",
+      "stars": 37259,
+      "forks": 2662,
+      "topics": [
+        "123pan",
+        "aliyun-drive",
+        "aliyunpan",
+        "aria2",
+        "baidu",
+        "baidu-netdisk",
+        "baidunetdisk",
+        "baidupan",
+        "baiduyun",
+        "guangya-netdisk",
+        "motrix",
+        "quark-netdisk",
+        "tampermonkey",
+        "tampermonkey-script",
+        "tampermonkey-userscript",
+        "tianyi-netdisk",
+        "uc-netdisk",
+        "userscript",
+        "xunlei-netdisk",
+        "yidong-netdisk"
+      ],
+      "boards": [
+        "javascript"
+      ],
+      "domain": "other",
+      "starsGained": null
+    },
+    {
+      "rank": 40,
+      "repo": "cjpais/Handy",
+      "url": "https://github.com/cjpais/Handy",
+      "description": "A free, open source, and extensible speech-to-text application that works completely offline.",
+      "language": "Rust",
+      "stars": 36750,
+      "forks": 3461,
+      "topics": [
+        "accessibility",
+        "cross-platform",
+        "speech-to-text",
+        "tauri-v2"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "other",
+      "starsGained": null
+    },
+    {
+      "rank": 41,
+      "repo": "xai-org/x-algorithm",
+      "url": "https://github.com/xai-org/x-algorithm",
+      "description": "Algorithm powering the For You feed on X",
+      "language": "Rust",
+      "stars": 34014,
+      "forks": 5503,
+      "topics": [],
+      "boards": [
+        "rust"
+      ],
+      "domain": "other",
+      "starsGained": null
+    },
+    {
+      "rank": 42,
+      "repo": "netbirdio/netbird",
+      "url": "https://github.com/netbirdio/netbird",
+      "description": "NetBird securely connects people, machines and AI agents across any network with one identity-based Zero Trust platform. Powered by peer-to-peer WireGuard®",
+      "language": "Go",
+      "stars": 30543,
+      "forks": 1818,
+      "topics": [
+        "golang",
+        "mesh",
+        "mesh-networks",
+        "nat-traversal",
+        "netbird",
+        "vpn",
+        "wireguard",
+        "wireguard-vpn",
+        "wiretrustee",
+        "zero-trust-network-access"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "infra",
+      "starsGained": null
+    },
+    {
+      "rank": 43,
+      "repo": "grafana/loki",
+      "url": "https://github.com/grafana/loki",
+      "description": "Like Prometheus, but for logs.",
+      "language": "Go",
+      "stars": 29107,
+      "forks": 4168,
+      "topics": [
+        "cloudnative",
+        "grafana",
+        "hacktoberfest",
+        "logging",
+        "loki",
+        "prometheus"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "devops",
+      "starsGained": null
+    },
+    {
+      "rank": 44,
+      "repo": "guillaumemeyer/watermarks-remover",
+      "url": "https://github.com/guillaumemeyer/watermarks-remover",
+      "description": "A privacy-first app that strips AI watermarks from content you own.",
+      "language": "Python",
+      "stars": 25925,
+      "forks": 2955,
+      "topics": [
+        "agent-skill",
+        "ai",
+        "anthropic",
+        "c2pa",
+        "chatgpt",
+        "claude",
+        "gemini",
+        "openai",
+        "provenance",
+        "synthid",
+        "watermark",
+        "watermark-detection",
+        "watermark-tools",
+        "watermarking",
+        "watermarks"
+      ],
+      "boards": [
+        "python"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 45,
+      "repo": "AgriciDaniel/claude-seo",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+      "language": "Python",
+      "stars": 25639,
+      "forks": 3365,
+      "topics": [
+        "ai",
+        "ai-seo",
+        "claude-code",
+        "claude-code-skill",
+        "marketing-automation",
+        "open-source",
+        "seo"
+      ],
+      "boards": [
+        "overall",
+        "python"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 46,
+      "repo": "CapSoftware/Cap",
+      "url": "https://github.com/CapSoftware/Cap",
+      "description": "Open source Loom alternative. Beautiful, shareable screen recordings.",
+      "language": "Rust",
+      "stars": 24242,
+      "forks": 2230,
+      "topics": [
+        "app",
+        "cap",
+        "coss",
+        "loom",
+        "mac",
+        "nextjs",
+        "nextjs15",
+        "open-source",
+        "oss",
+        "react",
+        "record",
+        "rust",
+        "screen-capture",
+        "screen-recorder",
+        "screenshot",
+        "solidjs",
+        "tauri",
+        "tauri-app",
+        "typescript",
+        "vite"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "frontend",
+      "starsGained": null
+    },
+    {
+      "rank": 47,
+      "repo": "NVIDIA/SkillSpector",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
+      "language": "Python",
+      "stars": 23889,
+      "forks": 2061,
+      "topics": [
+        "agent-security",
+        "agent-skills",
+        "agentic-ai",
+        "ai-security",
+        "claude-code",
+        "mcp",
+        "prompt-injection",
+        "security-scanner",
+        "security-tools",
+        "security-workflow",
+        "supply-chain-security"
+      ],
+      "boards": [
+        "python"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 48,
+      "repo": "citrolabs/ego-lite",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+      "language": "JavaScript",
+      "stars": 21212,
+      "forks": 1186,
+      "topics": [
+        "agent-skills",
+        "ai-agent",
+        "automation",
+        "browser",
+        "browser-automation",
+        "claude-code",
+        "codex",
+        "hermes-agent",
+        "skills",
+        "skills-sh"
+      ],
+      "boards": [
+        "javascript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 49,
+      "repo": "VictoriaMetrics/VictoriaMetrics",
+      "url": "https://github.com/VictoriaMetrics/VictoriaMetrics",
+      "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database",
+      "language": "Go",
+      "stars": 17995,
+      "forks": 1793,
+      "topics": [
+        "database",
+        "grafana",
+        "graphite",
+        "influxdb",
+        "kubernetes",
+        "metrics",
+        "monitoring",
+        "observability",
+        "opentelemetry",
+        "opentsdb",
+        "otlp",
+        "prometheus",
+        "promql",
+        "thanos",
+        "tsdb"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "db",
+      "starsGained": null
+    },
+    {
+      "rank": 50,
+      "repo": "tinygo-org/tinygo",
+      "url": "https://github.com/tinygo-org/tinygo",
+      "description": "Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.",
+      "language": "Go",
+      "stars": 17877,
+      "forks": 1102,
+      "topics": [
+        "adafruit",
+        "arduino",
+        "arm",
+        "avr",
+        "esp32",
+        "gpio",
+        "i2c",
+        "llvm",
+        "microbit",
+        "microcontroller",
+        "nrf51",
+        "nrf52",
+        "samd21",
+        "spi",
+        "stm32",
+        "tinygo",
+        "wasi",
+        "wasm",
+        "webassembly"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "lang",
+      "starsGained": null
+    },
+    {
+      "rank": 51,
+      "repo": "hashicorp/nomad",
+      "url": "https://github.com/hashicorp/nomad",
+      "description": "Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.",
+      "language": "Go",
+      "stars": 17068,
+      "forks": 2153,
+      "topics": [],
+      "boards": [
+        "go"
+      ],
+      "domain": "other",
+      "starsGained": null
+    },
+    {
+      "rank": 52,
+      "repo": "cloudflare/cloudflared",
+      "url": "https://github.com/cloudflare/cloudflared",
+      "description": "Cloudflare Tunnel client",
+      "language": "Go",
+      "stars": 16395,
+      "forks": 1514,
+      "topics": [
+        "cloudflare",
+        "cloudflare-tunnel",
+        "reverse-proxy",
+        "zero-trust-network-access"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "infra",
+      "starsGained": null
+    },
+    {
+      "rank": 53,
+      "repo": "Billionmail/BillionMail",
+      "url": "https://github.com/Billionmail/BillionMail",
+      "description": "BillionMail gives you open-source MailServer, NewsLetter,  Email Marketing — fully self-hosted, dev-friendly, and free from monthly fees. Join the discord: https://discord.gg/asfXzBUhZr",
+      "language": "Go",
+      "stars": 16151,
+      "forks": 1796,
+      "topics": [
+        "dovecot",
+        "email",
+        "email-marketing",
+        "mail",
+        "mailserver",
+        "newsletter",
+        "newsletters",
+        "postfix",
+        "rspamd",
+        "server",
+        "smtp"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "backend",
+      "starsGained": null
+    },
+    {
+      "rank": 54,
+      "repo": "stalwartlabs/stalwart",
+      "url": "https://github.com/stalwartlabs/stalwart",
+      "description": "All-in-one Mail & Collaboration server. Secure, scalable and fluent in every protocol (IMAP, JMAP, SMTP, CalDAV, CardDAV, WebDAV).",
+      "language": "Rust",
+      "stars": 15632,
+      "forks": 1031,
+      "topics": [
+        "caldav",
+        "carddav",
+        "imap",
+        "jmap",
+        "mail",
+        "pop3",
+        "rust",
+        "server",
+        "smtp",
+        "webdav"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "backend",
+      "starsGained": null
+    },
+    {
+      "rank": 55,
+      "repo": "YuJunZhiXue/dsh-purge",
+      "url": "https://github.com/YuJunZhiXue/dsh-purge",
+      "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
+      "language": "JavaScript",
+      "stars": 15562,
+      "forks": 3579,
+      "topics": [
+        "deepseek",
+        "deepseek-harness",
+        "dsh-plugin",
+        "dsh-plugins",
+        "harness-jailbreak",
+        "jailbreak",
+        "llm-jailbreak"
+      ],
+      "boards": [
+        "overall",
+        "javascript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 56,
+      "repo": "google/brotli",
+      "url": "https://github.com/google/brotli",
+      "description": "Brotli compression format",
+      "language": "TypeScript",
+      "stars": 15073,
+      "forks": 1394,
+      "topics": [],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "other",
+      "starsGained": null
+    },
+    {
+      "rank": 57,
+      "repo": "akitaonrails/ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars": 14866,
+      "forks": 1068,
+      "topics": [],
+      "boards": [
+        "rust"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 58,
+      "repo": "Renhuai123/ziwei-doushu",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "stars": 13433,
+      "forks": 2608,
+      "topics": [
+        "bazi",
+        "chinese-astrology",
+        "divination",
+        "fortune-telling",
+        "nextjs",
+        "open-source",
+        "purple-star-astrology",
+        "typescript",
+        "zi-wei-dou-shu",
+        "ziwei-doushu"
+      ],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "frontend",
+      "starsGained": null
+    },
+    {
+      "rank": 59,
+      "repo": "pollen-robotics/microduck",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "description": "A Tiny biped duck robot 🦆",
+      "language": "Rust",
+      "stars": 13300,
+      "forks": 1662,
+      "topics": [],
+      "boards": [
+        "rust"
+      ],
+      "domain": "other",
+      "starsGained": null
+    },
+    {
+      "rank": 60,
+      "repo": "Nasiko-Labs/nasiko",
+      "url": "https://github.com/Nasiko-Labs/nasiko",
+      "description": "The Open Runtime for AI Agents",
+      "language": "Rust",
+      "stars": 11419,
+      "forks": 2999,
+      "topics": [
+        "agent-security",
+        "ai",
+        "ai-agents",
+        "cli",
+        "hacktoberfest",
+        "llms",
+        "mcp-gateway",
+        "multi-agent",
+        "rust",
+        "tokenomics",
+        "tokenops"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 61,
+      "repo": "milind-soni/OpenMausBot",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars": 10761,
+      "forks": 1474,
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "codex",
+        "computer-use",
+        "docker",
+        "electron",
+        "expo",
+        "grok",
+        "grok-bot",
+        "grok-bot-alternative",
+        "self-hosted",
+        "typescript"
+      ],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 62,
+      "repo": "OpenWhispr/openwhispr",
+      "url": "https://github.com/OpenWhispr/openwhispr",
+      "description": "Voice-to-text dictation app with local (Nvidia Parakeet/Whisper) and cloud models (BYOK). Privacy-first and available cross-platform.",
+      "language": "JavaScript",
+      "stars": 10523,
+      "forks": 1368,
+      "topics": [
+        "ai",
+        "anthropic",
+        "cross-platform",
+        "gemini",
+        "groq",
+        "linux",
+        "macos",
+        "nvidia",
+        "open-source",
+        "openai",
+        "parakeet",
+        "speech-to-text",
+        "transcribe",
+        "whisper",
+        "windows"
+      ],
+      "boards": [
+        "javascript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 63,
+      "repo": "jakubkrehel/skills",
+      "url": "https://github.com/jakubkrehel/skills",
+      "description": "A collection of agent skills that help you build great interfaces.",
+      "language": "Markdown",
+      "stars": 10147,
+      "forks": 394,
+      "topics": [],
+      "boards": [
+        "overall"
+      ],
+      "domain": "other",
+      "starsGained": null
+    },
+    {
+      "rank": 64,
+      "repo": "CopilotKit/OpenBot",
+      "url": "https://github.com/CopilotKit/OpenBot",
+      "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+      "language": "TypeScript",
+      "stars": 9647,
+      "forks": 1194,
+      "topics": [
+        "ag-ui",
+        "agent-governance",
+        "ai-agents",
+        "browser-automation",
+        "copilotkit",
+        "generative-ui",
+        "mcp"
+      ],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 65,
+      "repo": "makecindy/cindy",
+      "url": "https://github.com/makecindy/cindy",
+      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "language": "TypeScript",
+      "stars": 8945,
+      "forks": 1071,
+      "topics": [
+        "agent",
+        "ai-agent",
+        "ai-assistant",
+        "android",
+        "claude-code",
+        "codex",
+        "electron",
+        "ios",
+        "llm",
+        "macos",
+        "react-native",
+        "typescript",
+        "windows"
+      ],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 66,
+      "repo": "superplanehq/superplane",
+      "url": "https://github.com/superplanehq/superplane",
+      "description": "Open source factory for one-shot engineering",
+      "language": "Go",
+      "stars": 8513,
+      "forks": 687,
+      "topics": [
+        "agent-orchestration",
+        "agentic-workflows",
+        "ai-agents",
+        "ai-coding",
+        "ai-software-engineering",
+        "developer-tools",
+        "go",
+        "react",
+        "self-hosted",
+        "software-factory",
+        "workflow-automation"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 67,
+      "repo": "JetBrains/thinkrail",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+      "language": "TypeScript",
+      "stars": 7020,
+      "forks": 402,
+      "topics": [
+        "agent",
+        "agent-skills",
+        "agentic-ai",
+        "agentic-workflow",
+        "ai-coding",
+        "ai-tools",
+        "pi-agent",
+        "pi-agent-extension",
+        "spec-driven",
+        "spec-driven-coding",
+        "spec-driven-development",
+        "vibe-coding",
+        "vibecoding"
+      ],
+      "boards": [
+        "overall",
+        "typescript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 68,
+      "repo": "beenuar/AiSOC",
+      "url": "https://github.com/beenuar/AiSOC",
+      "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
+      "language": "Python",
+      "stars": 6359,
+      "forks": 653,
+      "topics": [
+        "agentic-ai",
+        "ai-security",
+        "alert-triage",
+        "blue-team",
+        "cybersecurity",
+        "detection-engineering",
+        "incident-response",
+        "langgraph",
+        "llm-agents",
+        "mcp",
+        "mitre-attack",
+        "model-context-protocol",
+        "purple-team",
+        "security-operations",
+        "self-hosted",
+        "siem",
+        "soar",
+        "soc",
+        "threat-detection",
+        "threat-intelligence"
+      ],
+      "boards": [
+        "python"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 69,
+      "repo": "macro-inc/macro",
+      "url": "https://github.com/macro-inc/macro",
+      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "language": "Rust",
+      "stars": 6065,
+      "forks": 560,
+      "topics": [
+        "agent",
+        "ai",
+        "ai-agents",
+        "all-in-one",
+        "crm",
+        "crm-system",
+        "email",
+        "linear",
+        "mcp",
+        "messaging",
+        "notes",
+        "notion",
+        "office",
+        "rust",
+        "slack",
+        "slack-alternative",
+        "startup",
+        "startup-tools",
+        "typescript",
+        "workspace"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 70,
+      "repo": "mayswind/ezbookkeeping",
+      "url": "https://github.com/mayswind/ezbookkeeping",
+      "description": "ezBookkeeping is an open source, powerful, self-hosted personal finance app that is easy to use.",
+      "language": "Go",
+      "stars": 5934,
+      "forks": 737,
+      "topics": [
+        "accounting",
+        "app",
+        "bookkeeping",
+        "docker",
+        "expense-manager",
+        "expense-tracker",
+        "expenses",
+        "finance",
+        "finance-management",
+        "finances",
+        "financial",
+        "golang",
+        "homelab",
+        "mobile",
+        "money",
+        "money-manager",
+        "personal-finance",
+        "self-hosted",
+        "typescript",
+        "vue"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "mobile",
+      "starsGained": null
+    },
+    {
+      "rank": 71,
+      "repo": "agentgateway/agentgateway",
+      "url": "https://github.com/agentgateway/agentgateway",
+      "description": "Next Generation Agentic Proxy for AI Agents and MCP servers",
+      "language": "Rust",
+      "stars": 5859,
+      "forks": 1038,
+      "topics": [
+        "agents",
+        "ai",
+        "ai-gateway",
+        "api-gateway",
+        "gateway-api",
+        "kubernetes",
+        "mcp",
+        "mcp-gateway",
+        "reverse-proxy",
+        "rust",
+        "service-mesh"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 72,
+      "repo": "microsoft/skill-recorder",
+      "url": "https://github.com/microsoft/skill-recorder",
+      "description": "Desktop app that records your on-screen work session and uses the GitHub Copilot SDK to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Autopilots like Scout, Microsoft Copilot Cowork, or Copilot Studio.",
+      "language": "TypeScript",
+      "stars": 5640,
+      "forks": 644,
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "automation",
+        "copilot",
+        "copilot-cli",
+        "copilot-cowork",
+        "copilot-studio",
+        "electron",
+        "microsoft-scout",
+        "screen-recording"
+      ],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 73,
+      "repo": "nightly-labs/openbot",
+      "url": "https://github.com/nightly-labs/openbot",
+      "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+      "language": "TypeScript",
+      "stars": 4564,
+      "forks": 472,
+      "topics": [
+        "ai-agents",
+        "bun",
+        "codex",
+        "electron",
+        "local-first",
+        "macos",
+        "solidjs",
+        "typescript"
+      ],
+      "boards": [
+        "typescript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 74,
+      "repo": "NVIDIA/cuda-rust",
+      "url": "https://github.com/NVIDIA/cuda-rust",
+      "description": "NVIDIA's CUDA platform for Rust. Host runtime crates plus Tile (cutile-rs) and SIMT (cuda-oxide) kernel programming models in idiomatic Rust.",
+      "language": "Rust",
+      "stars": 3944,
+      "forks": 351,
+      "topics": [
+        "async",
+        "compiler-backend",
+        "cuda",
+        "gpu",
+        "heterogeneous-computing",
+        "high-performance-computing",
+        "nvidia",
+        "programming-languages",
+        "rust"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "backend",
+      "starsGained": null
+    },
+    {
+      "rank": 75,
+      "repo": "Mesh-LLM/mesh-llm",
+      "url": "https://github.com/Mesh-LLM/mesh-llm",
+      "description": "Distributed AI/LLM for the people. Share compute privately or publicly to power your agents and chat.",
+      "language": "Rust",
+      "stars": 3778,
+      "forks": 482,
+      "topics": [
+        "agents",
+        "ai",
+        "decentralized",
+        "distributed",
+        "llm"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 76,
+      "repo": "trymirai/uzu",
+      "url": "https://github.com/trymirai/uzu",
+      "description": "A high-performance inference engine for AI models",
+      "language": "Rust",
+      "stars": 3173,
+      "forks": 212,
+      "topics": [
+        "ai",
+        "high-performance",
+        "inference",
+        "llm",
+        "metal",
+        "rust",
+        "tts"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 77,
+      "repo": "slavakurilyak/awesome-ai-agents",
+      "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+      "description": "Awesome list of 300+ agentic AI resources",
+      "language": "Go",
+      "stars": 2845,
+      "forks": 740,
+      "topics": [
+        "agent",
+        "agentic",
+        "agents"
+      ],
+      "boards": [
+        "go"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 78,
+      "repo": "higgsfield-ai/skills",
+      "url": "https://github.com/higgsfield-ai/skills",
+      "description": "",
+      "language": "Python",
+      "stars": 1847,
+      "forks": 338,
+      "topics": [],
+      "boards": [
+        "python"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 79,
+      "repo": "techjarves/Portable-Local-Studio",
+      "url": "https://github.com/techjarves/Portable-Local-Studio",
+      "description": "Portable local AI studio for Windows, Linux, and macOS. Zero-setup GUI for Image Generation, GGUF LLMs, Text to Speech & Speech to Text",
+      "language": "JavaScript",
+      "stars": 1756,
+      "forks": 434,
+      "topics": [
+        "image-generation",
+        "speech-to-text",
+        "text-generation",
+        "text-to-speech"
+      ],
+      "boards": [
+        "javascript"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    },
+    {
+      "rank": 80,
+      "repo": "leepokai/Codync",
+      "url": "https://github.com/leepokai/Codync",
+      "description": "Open source Grok Bot alternative, Bring your own agent and subscription: message Claude Code, Codex, Gemini CLI, Cursor, Copilot and 40+ AI agents as bots on your own computer, from iPhone, Mac, Windows, Linux or terminal. Agent-agnostic and free. Also a Muse and Dots alternative. Built in Rust.",
+      "language": "Rust",
+      "stars": 1631,
+      "forks": 157,
+      "topics": [
+        "acp",
+        "agent-client-protocol",
+        "ai-agents",
+        "ai-assistant",
+        "claude",
+        "claude-code",
+        "codex",
+        "coding-agents",
+        "cursor",
+        "gemini",
+        "gemini-cli",
+        "grok-bot-alternative",
+        "ios",
+        "iphone",
+        "linux",
+        "macos",
+        "mcp",
+        "open-source",
+        "rust",
+        "self-hosted"
+      ],
+      "boards": [
+        "rust"
+      ],
+      "domain": "ai",
+      "starsGained": null
+    }
+  ]
+}
