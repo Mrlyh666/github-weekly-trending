@@ -1,4 +1,5 @@
 import { filterProjects } from './src/filter/index.js';
+import { parseQuery, resolveWeek } from './src/filter/week-resolution.js';
 
 const DOMAIN_LABELS = {
   ai: 'AI/大模型',
@@ -28,15 +29,6 @@ const state = {
 function fmt(n) {
   if (n == null) return '—';
   return n >= 10000 ? `${(n / 1000).toFixed(1)}k` : String(n);
-}
-
-function readStateFromUrl() {
-  const p = new URLSearchParams(location.search);
-  state.currentWeek = p.get('week');
-  state.languages = (p.get('lang') || '').split(',').filter(Boolean);
-  state.domains = (p.get('domain') || '').split(',').filter(Boolean);
-  state.sort = p.get('sort') === 'stars' ? 'stars' : 'gained';
-  state.query = p.get('q') || '';
 }
 
 function writeStateToUrl() {
@@ -231,8 +223,6 @@ function renderSources() {
 }
 
 async function init() {
-  readStateFromUrl();
-
   for (const b of document.querySelectorAll('#sort-toggle .chip')) {
     b.addEventListener('click', () => {
       state.sort = b.dataset.sort === 'stars' ? 'stars' : 'gained';
@@ -271,13 +261,17 @@ async function load() {
   renderSources();
 }
 
+const query = parseQuery(location.search);
+state.languages = query.languages;
+state.domains = query.domains;
+state.sort = query.sort;
+state.query = query.query;
+
 fetch('./data/weeks/index.json')
   .then((r) => r.json())
   .then((index) => {
     state.weeks = index.weeks ?? [];
-    if (!state.currentWeek || !state.weeks.includes(state.currentWeek)) {
-      state.currentWeek = index.latest;
-    }
+    state.currentWeek = resolveWeek(query.week, state.weeks, index.latest);
     init();
   })
   .catch(() => init());
