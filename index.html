@@ -7,6 +7,41 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>GitHub 周榜</h1>
+    <header class="topbar">
+      <h1>GitHub 周榜</h1>
+      <div class="week-row">
+        <label for="week-select">周</label>
+        <select id="week-select"></select>
+        <span id="updated-at"></span>
+      </div>
+    </header>
+
+    <section id="filters" class="filters">
+      <div class="filter-row">
+        <span class="filter-label">语言</span>
+        <div id="lang-chips" class="chips"></div>
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">领域</span>
+        <div id="domain-chips" class="chips"></div>
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">排序</span>
+        <div id="sort-toggle" class="chips">
+          <button class="chip" data-sort="gained">本周涨星</button>
+          <button class="chip" data-sort="stars">总星</button>
+        </div>
+        <input id="query" type="search" placeholder="搜索仓库 / 描述" />
+      </div>
+    </section>
+
+    <main id="list" class="list"></main>
+    <p id="empty" class="empty" hidden>本周暂无数据</p>
+
+    <footer class="footer">
+      非官方榜单，数据来自 GitHub 公开 trending 页面与 REST API，每周一自动更新。
+    </footer>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

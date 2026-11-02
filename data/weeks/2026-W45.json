@@ -1,0 +1,46 @@
+{
+  "week": "2026-W45",
+  "generatedAt": "2026-11-02T00:15:00Z",
+  "sources": { "trending": "ok", "api": "ok" },
+  "projects": [
+    {
+      "rank": 1,
+      "repo": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "description": "Get up and running with Llama 3.3, DeepSeek-R1, Phi-4 and other large language models.",
+      "language": "Go",
+      "stars": 137000,
+      "starsGained": 4210,
+      "forks": 11600,
+      "topics": ["llm", "go", "genai"],
+      "domain": "ai",
+      "boards": ["overall", "go"]
+    },
+    {
+      "rank": 2,
+      "repo": "zed-industries/zed",
+      "url": "https://github.com/zed-industries/zed",
+      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor.",
+      "language": "Rust",
+      "stars": 55000,
+      "starsGained": 980,
+      "forks": 3500,
+      "topics": ["editor", "rust"],
+      "domain": "devtools",
+      "boards": ["overall", "rust"]
+    },
+    {
+      "rank": 3,
+      "repo": "example/fresh",
+      "url": "https://github.com/example/fresh",
+      "description": "A brand-new project appearing for the first time.",
+      "language": "TypeScript",
+      "stars": 1200,
+      "starsGained": null,
+      "forks": 40,
+      "topics": ["typescript", "ui"],
+      "domain": "frontend",
+      "boards": ["overall"]
+    }
+  ]
+}
