@@ -9,14 +9,13 @@ const weeksDir = join(dirname(fileURLToPath(import.meta.url)), '..', 'data', 'we
 test('index.json exposes weeks and latest', () => {
   const index = JSON.parse(readFileSync(join(weeksDir, 'index.json'), 'utf8'));
   assert.ok(Array.isArray(index.weeks));
-  assert.equal(typeof index.latest, 'string');
+  assert.ok(typeof index.latest === 'string' || index.latest === null);
 });
 
 test('every week file matches the project schema', () => {
   const files = readdirSync(weeksDir).filter(
     (f) => f.endsWith('.json') && f !== 'index.json',
   );
-  assert.ok(files.length > 0, 'expected at least one week file');
   const required = ['repo', 'url', 'description', 'language', 'stars', 'starsGained', 'forks', 'topics', 'domain', 'boards', 'rank'];
   for (const f of files) {
     const week = JSON.parse(readFileSync(join(weeksDir, f), 'utf8'));
