@@ -2,7 +2,10 @@
 // Returns null when the repo is not found, the request is rate-limited, or the
 // network fails — the collector turns null into a stub instead of aborting.
 export async function getRepoDetails(repo, token) {
-  const headers = { Accept: 'application/vnd.github+json' };
+  const headers = {
+    Accept: 'application/vnd.github+json',
+    'User-Agent': 'github-weekly-trending',
+  };
   if (token) headers.Authorization = `Bearer ${token}`;
 
   let res;
@@ -13,7 +16,12 @@ export async function getRepoDetails(repo, token) {
   }
   if (!res.ok) return null;
 
-  const j = await res.json();
+  let j;
+  try {
+    j = await res.json();
+  } catch {
+    return null;
+  }
   return {
     repo,
     stars: j.stargazers_count ?? null,

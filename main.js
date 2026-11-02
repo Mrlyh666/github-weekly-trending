@@ -201,13 +201,33 @@ function renderList() {
       if (!groups.has(p.domain)) groups.set(p.domain, []);
       groups.get(p.domain).push(p);
     }
-    for (const [domain, items] of groups) {
+    const order = [...groups.keys()].sort(
+      (a, b) => (a === 'other') - (b === 'other'),
+    );
+    for (const domain of order) {
       list.appendChild(sectionHeader(DOMAIN_LABELS[domain] || domain));
-      for (const p of items) list.appendChild(card(p));
+      for (const p of groups.get(domain)) list.appendChild(card(p));
     }
   } else {
     for (const p of projects) list.appendChild(card(p));
   }
+}
+
+function renderSources() {
+  const el = document.getElementById('sources');
+  if (!el) return;
+  if (!state.weekData) {
+    el.textContent = '';
+    return;
+  }
+  const t = state.weekData.sources?.trending;
+  const a = state.weekData.sources?.api;
+  const notes = [];
+  if (t === 'fallback') notes.push('榜单来自 Search API 回退');
+  else if (t === 'failed') notes.push('榜单抓取失败');
+  if (a === 'degraded') notes.push('部分仓库详情缺失');
+  else if (a === 'failed') notes.push('仓库详情不可用');
+  el.textContent = notes.length ? ` · ${notes.join('；')}` : '';
 }
 
 async function init() {
@@ -240,6 +260,7 @@ async function load() {
   renderWeekSelector();
   renderFilters();
   renderList();
+  renderSources();
 
   const res = await fetch(`./data/weeks/${state.currentWeek}.json`);
   state.weekData = res.ok ? await res.json() : null;
@@ -247,6 +268,7 @@ async function load() {
   renderWeekSelector();
   renderFilters();
   renderList();
+  renderSources();
 }
 
 fetch('./data/weeks/index.json')

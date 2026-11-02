@@ -3,8 +3,13 @@
 // snapshot (first appearance, or a missing prior week) gets null.
 export function computeStarsGained(prevProjects, currentProjects) {
   const prev = new Map((prevProjects ?? []).map((p) => [p.repo, p.stars]));
-  return currentProjects.map((p) => ({
-    ...p,
-    starsGained: prev.has(p.repo) ? p.stars - prev.get(p.repo) : null,
-  }));
+  return currentProjects.map((p) => {
+    const cur = p.stars;
+    const old = prev.get(p.repo);
+    // A gain is only meaningful when both snapshots captured the star count;
+    // a failed fetch (null) on either side must not fabricate a number.
+    const starsGained =
+      prev.has(p.repo) && cur != null && old != null ? cur - old : null;
+    return { ...p, starsGained };
+  });
 }

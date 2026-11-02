@@ -46,6 +46,17 @@ test('getRepoDetails returns null on 404', async () => {
   assert.equal(await getRepoDetails('octo/repo'), null);
 });
 
+test('getRepoDetails returns null when the JSON body is unparseable', async () => {
+  globalThis.fetch = async () => ({
+    ok: true,
+    status: 200,
+    json: async () => {
+      throw new Error('invalid JSON');
+    },
+  });
+  assert.equal(await getRepoDetails('octo/repo'), null);
+});
+
 test('getRepoDetails returns null on network error', async () => {
   globalThis.fetch = async () => {
     throw new Error('ECONNRESET');

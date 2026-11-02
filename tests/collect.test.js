@@ -42,6 +42,7 @@ test('collect dedupes, classifies, computes gain and ranks', async () => {
 
   assert.match(result.week, /^2026-W\d{2}$/);
   assert.equal(result.sources.trending, 'ok');
+  assert.equal(result.sources.api, 'degraded'); // 9 details ok, zlib-searcher null
   assert.equal(result.projects.length, 10);
 
   const repos = result.projects.map((p) => p.repo);
@@ -72,4 +73,30 @@ test('collect dedupes, classifies, computes gain and ranks', async () => {
     assert.equal(typeof p.domain, 'string');
     assert.ok(p.domain.length > 0);
   }
+});
+
+test('collect uses the search fallback when trending boards are empty', async () => {
+  const result = await collect({
+    getBoards: async () => '',
+    getRepoDetails: async (repo) => ({ repo, stars: 100, forks: 1, topics: [], description: 'from search', language: 'Go' }),
+    searchFallback: async () => [
+      { repo: 'fallback/x', url: 'https://github.com/fallback/x', description: 'from search', language: 'Go' },
+    ],
+  });
+  assert.equal(result.sources.trending, 'fallback');
+  assert.equal(result.sources.api, 'ok');
+  assert.equal(result.projects.length, 1);
+  assert.equal(result.projects[0].repo, 'fallback/x');
+  assert.deepEqual(result.projects[0].boards, []);
+});
+
+test('collect reports failed sources when nothing is collected', async () => {
+  const result = await collect({
+    getBoards: async () => '',
+    getRepoDetails: async () => null,
+    searchFallback: async () => [],
+  });
+  assert.equal(result.sources.trending, 'failed');
+  assert.equal(result.sources.api, 'failed');
+  assert.deepEqual(result.projects, []);
 });

@@ -28,6 +28,18 @@ test('returns null gain for all when the previous week is empty', () => {
   );
 });
 
+test('returns null gain when the current snapshot has null stars', () => {
+  const prev = [{ repo: 'a/b', stars: 10 }];
+  const current = [{ repo: 'a/b', stars: null }];
+  assert.equal(computeStarsGained(prev, current)[0].starsGained, null);
+});
+
+test('returns null gain when the previous snapshot has null stars', () => {
+  const prev = [{ repo: 'a/b', stars: null }];
+  const current = [{ repo: 'a/b', stars: 13 }];
+  assert.equal(computeStarsGained(prev, current)[0].starsGained, null);
+});
+
 test('does not mutate its inputs', () => {
   const prev = [{ repo: 'a/b', stars: 10 }];
   const current = [{ repo: 'a/b', stars: 13 }];

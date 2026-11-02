@@ -19,6 +19,10 @@ test('writeWeek + writeIndex + readPrevWeek round-trip', () => {
     writeIndex(dir, ['2026-W44', '2026-W45']);
     assert.deepEqual(readPrevWeek(dir, '2026-W45'), w44);
     assert.equal(readPrevWeek(dir, '2026-W44'), null); // first week has none
+    // At collection time the current week is NOT yet in the index, so
+    // readPrevWeek must return the newest week strictly older than it.
+    assert.deepEqual(readPrevWeek(dir, '2026-W46'), w45);
+    assert.equal(readPrevWeek(dir, '2026-W41'), null); // before the first week
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }

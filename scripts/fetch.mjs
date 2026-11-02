@@ -19,6 +19,25 @@ async function getBoards(board) {
 }
 
 const token = process.env.GITHUB_TOKEN;
+
+// Fallback sourced from the Search API (see spec §11): repositories created in
+// the last 7 days, by stars. Returns trending-shaped entries.
+async function searchFallback() {
+  const headers = { 'User-Agent': 'github-weekly-trending' };
+  if (token) headers.Authorization = `Bearer ${token}`;
+  const since = new Date(Date.now() - 7 * 24 * 3600 * 1000).toISOString();
+  const q = `created:>${since}`;
+  const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(q)}&sort=stars&per_page=30`;
+  const res = await fetch(url, { headers });
+  if (!res.ok) return [];
+  const j = await res.json();
+  return (j.items ?? []).map((it) => ({
+    repo: it.full_name,
+    url: it.html_url,
+    description: it.description ?? '',
+    language: it.language ?? null,
+  }));
+}
 const currentWeek = isoWeek(new Date());
 const prevWeekData = readPrevWeek(dataDir, currentWeek);
 const prevProjects = prevWeekData?.projects ?? [];
@@ -27,7 +46,13 @@ const weekData = await collect({
   getBoards,
   getRepoDetails: (repo) => getRepoDetails(repo, token),
   prevProjects,
+  searchFallback,
 });
+
+if (weekData.projects.length === 0) {
+  console.error('collection produced zero projects; aborting with non-zero exit');
+  process.exit(1);
+}
 
 writeWeek(dataDir, weekData);
 
